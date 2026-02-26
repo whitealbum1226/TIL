@@ -1,0 +1,111 @@
+// 누적합
+// Main.c
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{
+	int i = 0;
+	int Num;
+	int Sum = 0;
+
+	while (i < 5)
+	{
+
+		scanf("%d", &Num);
+
+		Sum = Sum + Num;
+
+		++i;
+	}
+	printf("%d", Sum);
+
+	return 0;
+}
+
+// 누적곱
+// Main.c
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+
+int main(void)
+{   
+	int i = 0;
+	int Num;
+	int Sum = 1;
+
+	while (i < 5)
+	{
+		scanf("%d", &Num);
+		Sum *= Num;
+
+		++i;
+	}
+	printf("%d", Sum);
+
+	return 0;
+}
+
+// 최대값
+// Main.c
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <limits.h> // 이 친구를 이용해야 INT_MIN 사용가능
+
+int main(void)
+{
+	int i = 0;
+	int Num;
+	int Max = INT_MIN; 
+
+	while (i < 5)
+	{
+		scanf("%d", &Num);
+
+		if (Max < Num)
+		{
+			Max = Num;
+		}
+
+		++i;
+	}
+	printf("%d", Max);
+
+	return 0;
+}
+
+//최소값
+// Main.c
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <limits.h> // 이 친구를 이용해야 INT_MAX 사용가능
+
+int main(void)
+{
+	int i = 0;
+	int Min = INT_MAX;
+	int Num;
+
+	while (i < 5)
+	{
+		scanf("%d", &Num);
+
+		if (Num < Min)
+		{
+			Min = Num;
+		}
+
+		++i;
+	}
+	printf("%d", Min);
+
+	return 0;
+}
