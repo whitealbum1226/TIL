@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+float CurrentAccountBalance = 980000;
+
+void Deposit(int InMoney)
+{
+	CurrentAccountBalance = CurrentAccountBalance + InMoney;
+	
+	Deposit(10000);
+
+	return 0;
+}
